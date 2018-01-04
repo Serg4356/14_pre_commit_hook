@@ -1,0 +1,17 @@
+# Path to local PowerShell:
+powerShell="c:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy RemoteSigned -Command"
+# Command to run unittest:
+testRun="C:\ProgramData\Anaconda3\python.exe G:\devman\14_pre_commit_hook\tests.py -u all"
+# Running pre-commit and gets exit-code:
+runString=$powerShell' '$testRun
+exec $runString
+exitCode=$?
+echo "Exit-code of unittest is:"
+echo $exitCode
+if [ x"$exitCode" == x"0" ]
+then
+ exit 0
+else
+ echo "Not all unit-tests passed! Commit cancelled!"
+ exit 1
+fi
