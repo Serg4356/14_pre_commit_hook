@@ -1,4 +1,4 @@
-# Path to local PowerShell:
+#  Path to local PowerShell:
 powerShellPath="c:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
 powerShellCommand="-ExecutionPolicy RemoteSigned -Command"
 # Command to run unittest:
