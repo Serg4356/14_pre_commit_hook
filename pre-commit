@@ -1,9 +1,9 @@
-# Path to local PowerShell:
-powerShellPath="c:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
+#  Path to local PowerShell:
+powerShellPath="powershell.exe"
 powerShellCommand="-ExecutionPolicy RemoteSigned -Command"
 # Command to run unittest:
-pythonExePath="C:\ProgramData\Anaconda3\python.exe"
-testUnitPath="G:\devman\14_pre_commit_hook\tests.py"
+pythonExePath="python.exe"
+testUnitPath="tests.py"
 # Running pre-commit and gets exit-code:
 runString=$powerShellPath' '$powerShellCommand' '$pythonExePath' '$testUnitPath
 exec $runString
