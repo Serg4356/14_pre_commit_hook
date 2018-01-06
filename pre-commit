@@ -5,7 +5,7 @@ powerShellCommand="-ExecutionPolicy RemoteSigned -Command"
 pythonExePath="C:\ProgramData\Anaconda3\python.exe"
 testUnitPath="G:\devman\14_pre_commit_hook\tests.py"
 # Running pre-commit and gets exit-code:
-runString=$powerShellPath' '$powerShellCommand' 'pythonExePath' 'testUnitPath
+runString=$powerShellPath' '$powerShellCommand' '$pythonExePath' '$testUnitPath
 exec $runString
 exitCode=$?
 echo "Exit-code of unittest is:"
