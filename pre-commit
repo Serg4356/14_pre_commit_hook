@@ -1,11 +1,5 @@
-#  Path to local PowerShell:
-powerShellPath="powershell.exe"
-powerShellCommand="-ExecutionPolicy RemoteSigned -Command"
-# Command to run unittest:
-pythonExePath="python.exe"
-testUnitPath="tests.py"
-# Running pre-commit and gets exit-code:
-runString=$powerShellPath' '$powerShellCommand' '$pythonExePath' '$testUnitPath
+#!/bin/sh
+runString="powershell.exe -ExecutionPolicy RemoteSigned -Command python.exe tests.py"
 exec $runString
 exitCode=$?
 echo "Exit-code of unittest is:"
