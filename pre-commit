@@ -1,9 +1,12 @@
-#!/bin/sh
-runString="powershell.exe -ExecutionPolicy RemoteSigned -Command python.exe tests.py"
+#!/bin/bash
+runString="python3 tests.py"
+
 exec $runString
-exitCode=$?
-echo "Exit-code of unittest is:"
+
+exitCode =$?
+
 echo $exitCode
+
 if [ x"$exitCode" == x"0" ]
 then
  exit 0
