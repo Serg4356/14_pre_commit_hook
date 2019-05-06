@@ -1,6 +1,6 @@
 # Quadratic Equations Solver
 
-Programm contains function which solves quadratic equations. Also you can find unit-test module, and pre-commit hook file, which you can use to ran test automatically before commit changes in your repository.
+Programm contains function which solves quadratic equations. Also you can find unit-test module, and pre-commit hook file, which you can use to run test automatically before commit changes in your repository.
 
 # Quick Start
 
